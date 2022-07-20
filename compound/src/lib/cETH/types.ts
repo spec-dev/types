@@ -345,6 +345,8 @@ export namespace cETH {
         amount: string
     }
     export interface CETH {
+        address?: string
+
         /**
          * Payable: false
          * Constant: true

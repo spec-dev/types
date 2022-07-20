@@ -346,6 +346,8 @@ export namespace cToken {
         amount: string
     }
     export interface CToken {
+        address?: string
+
         /**
          * Payable: false
          * Constant: true
