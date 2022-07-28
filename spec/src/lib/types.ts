@@ -7,6 +7,8 @@ export interface SpecEventOrigin {
 }
 
 export type SpecEvent<T> = {
+    id: string
+    nonce: number
     name: string
     origin: SpecEventOrigin
     object: T
