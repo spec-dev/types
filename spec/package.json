@@ -1,6 +1,6 @@
 {
     "name": "@spec.types/spec",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Spec Types",
     "keywords": [
         "javascript",
@@ -50,6 +50,6 @@
             "pre-commit": "pretty-quick --staged"
         }
     },
-    "jsdelivr": "dist/umd/spec.js",
-    "unpkg": "dist/umd/spec.js"
+    "jsdelivr": "dist/umd/spec-types.js",
+    "unpkg": "dist/umd/spec-types.js"
 }

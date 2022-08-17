@@ -5,10 +5,10 @@ module.exports = {
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist/umd'),
-        filename: 'spec.js',
+        filename: 'spec-types.js',
         library: {
             type: 'umd',
-            name: 'spec',
+            name: 'spec-types',
         },
     },
     module: {
