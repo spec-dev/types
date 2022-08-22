@@ -11,5 +11,5 @@ export type SpecEvent<T> = {
     nonce: number
     name: string
     origin: SpecEventOrigin
-    object: T
+    data: T
 }
