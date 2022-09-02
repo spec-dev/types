@@ -14,6 +14,6 @@ export interface EthContract {
     // The number of the block this transaction was included in.
     blockNumber: number
 
-    // Timestamp (without timezone) of when this contract's block was collated.
-    blockTimestamp: Date
+    // Timestamp of when this contract's block was collated.
+    blockTimestamp: string
 }

@@ -62,8 +62,8 @@ export interface EthTransaction {
     // The number of the block this transaction was included in.
     blockNumber: number
 
-    // Timestamp (without timezone) of when this transaction's block was collated.
-    blockTimestamp: Date
+    // Timestamp of when this transaction's block was collated.
+    blockTimestamp: string
 }
 
 export enum EthTransactionStatus {

@@ -67,8 +67,8 @@ export interface EthTrace {
     // The number of the block this trace was included in.
     blockNumber: number
 
-    // Timestamp (without timezone) of when this trace's block was collated.
-    blockTimestamp: Date
+    // Timestamp of when this trace's block was collated.
+    blockTimestamp: string
 }
 
 export enum EthTraceType {

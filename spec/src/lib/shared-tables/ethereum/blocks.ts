@@ -56,6 +56,6 @@ export interface EthBlock {
     // Number of transactions included in this block.
     transactionCount: number
 
-    // Timestamp (without timezone) of when this block was collated.
+    // Timestamp of when this block was collated.
     timestamp: string
 }
