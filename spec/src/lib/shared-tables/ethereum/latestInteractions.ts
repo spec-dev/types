@@ -3,13 +3,13 @@
  */
 export interface EthLatestInteraction {
     // Address this transaction or trace was sent from.
-    from: string
+    fromAddress: string
 
     // Address this transaction or trace was sent to.
-    to: string
+    toAddress: string
 
     // Specifies whether the sender or recipient is a wallet or a contract.
-    interactionType: EthAddressInteractionType
+    interactionType: EthLatestInteractionType
 
     // The transaction or trace hash.
     hash: string
@@ -24,7 +24,7 @@ export interface EthLatestInteraction {
     blockNumber: number
 }
 
-export enum EthAddressInteractionType {
+export enum EthLatestInteractionType {
     WalletToContract = 'wallet:contract',
     WalletToWallet = 'wallet:wallet',
     ContractToWallet = 'contract:wallet',
