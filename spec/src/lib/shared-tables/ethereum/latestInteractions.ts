@@ -3,10 +3,10 @@
  */
 export interface EthLatestInteraction {
     // Address this transaction or trace was sent from.
-    fromAddress: string
+    from: string
 
     // Address this transaction or trace was sent to.
-    toAddress: string
+    to: string
 
     // Specifies whether the sender or recipient is a wallet or a contract.
     interactionType: EthLatestInteractionType
