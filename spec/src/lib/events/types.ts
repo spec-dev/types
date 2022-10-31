@@ -1,14 +1,16 @@
 export interface SpecEventOrigin {
-    chainId: number
-    blockNumber: number
+    chainId?: number
     transactionHash?: string
     contractAddress?: string
-    eventTimestamp: string // ISO string (e.g. "2022-08-28T02:31:37.000Z")
+    blockNumber: number
+    blockHash: string
+    blockTimestamp: string
+    eventTimestamp: string
 }
 
 export type SpecEvent<T> = {
     id: string
-    nonce: number
+    nonce: string
     name: string
     origin: SpecEventOrigin
     data: T
