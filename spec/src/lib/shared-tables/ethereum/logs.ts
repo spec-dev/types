@@ -29,6 +29,12 @@ export interface EthLog {
     // Data Topic at index 3.
     topic3: string | null
 
+    // Name of the contract event associated with this log.
+    eventName: string
+
+    // Arguments provided to the contract event.
+    eventArgs: object[]
+
     // The hash of the block this transaction was included in.
     blockHash: string
 

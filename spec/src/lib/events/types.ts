@@ -1,17 +1,35 @@
+import {
+    StringKeyMap,
+    Timestamp,
+    BlockHash,
+    BlockNumber,
+    TransactionHash,
+    Address,
+    ChainId,
+} from '../types'
+
 export interface SpecEventOrigin {
-    chainId?: number
-    transactionHash?: string
-    contractAddress?: string
-    blockNumber: number
-    blockHash: string
-    blockTimestamp: string
-    eventTimestamp: string
+    eventTimestamp: Timestamp
+    chainId: ChainId
+    blockNumber: BlockNumber
+    blockHash: BlockHash
+    blockTimestamp: Timestamp
+    transactionHash?: TransactionHash
+    contractAddress?: Address
 }
 
-export type SpecEvent<T> = {
+export type TypedSpecEvent<T> = {
     id: string
     nonce: string
     name: string
     origin: SpecEventOrigin
     data: T
+}
+
+export type SpecEvent = {
+    id: string
+    nonce: string
+    name: string
+    origin: SpecEventOrigin
+    data: StringKeyMap | StringKeyMap[]
 }

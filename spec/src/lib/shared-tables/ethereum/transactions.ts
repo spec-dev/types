@@ -26,6 +26,12 @@ export interface EthTransaction {
     // Data sent along with the transaction.
     input: string | null
 
+    // Name of the contract function executed.
+    functionName: string
+
+    // Arguments provided to the contract function.
+    functionArgs: object[]
+
     // EIP transaction type.
     transactionType: number | null
 
