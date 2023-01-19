@@ -1,9 +1,11 @@
+import { BlockHash, BlockNumber, Timestamp, Address, TransactionHash, Json } from '../../types'
+
 /**
  * An Ethereum Transaction
  */
 export interface EthTransaction {
     // Transaction hash.
-    hash: string
+    hash: TransactionHash
 
     // Number of transactions sent from address.
     nonce: number
@@ -12,13 +14,13 @@ export interface EthTransaction {
     transactionIndex: number
 
     // Address this transaction was sent from.
-    from: string
+    from: Address
 
     // Address this transaction was sent to.
-    to: string | null
+    to: Address | null
 
     // The contract address created, if the transaction was a contract creation, otherwise null.
-    contractAddress: string | null
+    contractAddress: Address | null
 
     // Value transferred in Wei.
     value: string | null
@@ -30,7 +32,7 @@ export interface EthTransaction {
     functionName: string
 
     // Arguments provided to the contract function.
-    functionArgs: object[]
+    functionArgs: Json
 
     // EIP transaction type.
     transactionType: number | null
@@ -63,13 +65,13 @@ export interface EthTransaction {
     effectiveGasPrice: string | null
 
     // The hash of the block this transaction was included in.
-    blockHash: string
+    blockHash: BlockHash
 
     // The number of the block this transaction was included in.
-    blockNumber: number
+    blockNumber: BlockNumber
 
     // Timestamp of when this transaction's block was collated.
-    blockTimestamp: string
+    blockTimestamp: Timestamp
 }
 
 export enum EthTransactionStatus {

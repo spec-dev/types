@@ -1,3 +1,5 @@
+import { BlockHash, BlockNumber, Timestamp, Address, TransactionHash } from '../../types'
+
 /**
  * An Ethereum Trace
  */
@@ -8,19 +10,19 @@ export interface EthTrace {
     id: string
 
     // This trace's transaction hash.
-    transactionHash: string | null
+    transactionHash: TransactionHash | null
 
     // The index of this trace's transaction in this block.
     transactionIndex: number | null
 
     // Address of the sender, null when trace_type is genesis or reward.
-    from: string | null
+    from: Address | null
 
     // Address of the receiver if trace_type is call, address of new contract
     // or null if trace_type is create, beneficiary address if trace_type is suicide,
     // miner address if trace_type is reward, shareholder address if trace_type is genesis,
     // WithdrawDAO address if trace_type is daofork.
-    to: string | null
+    to: Address | null
 
     // Value transferred in Wei.
     value: string | null
@@ -62,13 +64,13 @@ export interface EthTrace {
     gasUsed: string | null
 
     // The hash of the block this trace was included in.
-    blockHash: string
+    blockHash: BlockHash
 
     // The number of the block this trace was included in.
-    blockNumber: number
+    blockNumber: BlockNumber
 
     // Timestamp of when this trace's block was collated.
-    blockTimestamp: string
+    blockTimestamp: Timestamp
 }
 
 export enum EthTraceType {

@@ -1,3 +1,5 @@
+import { BlockHash, BlockNumber, Timestamp, Address, TransactionHash, Json } from '../../types'
+
 /**
  * An Ethereum Log
  */
@@ -6,13 +8,13 @@ export interface EthLog {
     logIndex: number
 
     // This log's transaction hash.
-    transactionHash: string
+    transactionHash: TransactionHash
 
     // The index of this log's transaction in this block.
     transactionIndex: number
 
     // Address from which this log originated.
-    address: string | null
+    address: Address | null
 
     // Log arguments.
     data: string | null
@@ -33,14 +35,14 @@ export interface EthLog {
     eventName: string
 
     // Arguments provided to the contract event.
-    eventArgs: object[]
+    eventArgs: Json
 
     // The hash of the block this transaction was included in.
-    blockHash: string
+    blockHash: BlockHash
 
     // The number of the block this transaction was included in.
-    blockNumber: number
+    blockNumber: BlockNumber
 
     // Timestamp of when this log's block was collated.
-    blockTimestamp: string
+    blockTimestamp: Timestamp
 }

@@ -1,15 +1,17 @@
+import { BlockHash, BlockNumber, Timestamp } from '../../types'
+
 /**
  * An Ethereum Block
  */
 export interface EthBlock {
     // Block hash.
-    hash: string
+    hash: BlockHash
 
     // Block number.
-    number: number
+    number: BlockNumber
 
     // Block's parent's hash.
-    parentHash: string | null
+    parentHash: BlockHash | null
 
     // Hash of the generated proof-of-work.
     nonce: string
@@ -57,5 +59,5 @@ export interface EthBlock {
     transactionCount: number
 
     // Timestamp of when this block was collated.
-    timestamp: string
+    timestamp: Timestamp
 }

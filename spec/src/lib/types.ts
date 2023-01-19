@@ -10,7 +10,7 @@ export type TransactionHash = string
 
 export type Timestamp = string
 
-export type JSON = StringKeyMap | StringKeyMap[]
+export type Json = StringKeyMap | StringKeyMap[]
 
 export enum ChainId {
     Ethereum = '1',

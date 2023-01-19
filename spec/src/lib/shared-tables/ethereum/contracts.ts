@@ -1,28 +1,30 @@
+import { BlockHash, BlockNumber, Timestamp, Address } from '../../types'
+
 /**
  * An Ethereum Contract
  */
 export interface EthContract {
     // The contract address.
-    address: string
+    address: Address
 
     // The bytecode of the contract.
     bytecode: string | null
 
     // Whether this contract subscribes to the ERC-20 standard.
-    isERC20: boolean | null
+    isErc20: boolean | null
 
     // Whether this contract subscribes to the ERC-721 standard.
-    isERC721: boolean | null
+    isErc721: boolean | null
 
     // Whether this contract subscribes to the ERC-1155 standard.
-    isERC1155: boolean | null
+    isErc1155: boolean | null
 
     // The hash of the block this transaction was included in.
-    blockHash: string
+    blockHash: BlockHash
 
     // The number of the block this transaction was included in.
-    blockNumber: number
+    blockNumber: BlockNumber
 
     // Timestamp of the bloc in which this contract was created.
-    blockTimestamp: string
+    blockTimestamp: Timestamp
 }
