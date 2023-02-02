@@ -26,10 +26,5 @@ export type TypedSpecEvent<T> = {
     data: T
 }
 
-export type SpecEvent = {
-    id: string
-    nonce: string
-    name: string
-    origin: SpecEventOrigin
-    data: StringKeyMap | StringKeyMap[]
-}
+export type SpecEvent = TypedSpecEvent<StringKeyMap>
+export type SpecEventMulti = TypedSpecEvent<StringKeyMap[]>
