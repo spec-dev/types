@@ -1,5 +1,7 @@
 export type StringKeyMap = { [key: string]: any }
 
+export type StringMap = { [key: string]: string }
+
 export type Address = string
 
 export type BlockNumber = number

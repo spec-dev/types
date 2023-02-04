@@ -1,3 +1,5 @@
 export * from './lib/events/types'
+export * from './lib/events/helpers'
 export * from './lib/shared-tables/types'
+export * from './lib/shared-tables/helpers'
 export * from './lib/types'
