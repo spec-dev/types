@@ -1,3 +1,4 @@
+export * from './lib/calls/types'
 export * from './lib/events/types'
 export * from './lib/events/helpers'
 export * from './lib/shared-tables/types'
