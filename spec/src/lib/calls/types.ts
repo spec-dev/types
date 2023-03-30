@@ -16,6 +16,7 @@ export interface SpecCallOrigin {
     blockTimestamp: Timestamp
     transactionHash: TransactionHash
     contractAddress: Address
+    contractName: string
 }
 
 export type SpecCall = {
