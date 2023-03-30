@@ -9,7 +9,7 @@ import {
 } from '../types'
 
 export interface SpecCallOrigin {
-    callTimestamp: Timestamp
+    eventTimestamp: Timestamp
     chainId: ChainId
     blockNumber: BlockNumber
     blockHash: BlockHash
