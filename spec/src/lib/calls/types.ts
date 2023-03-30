@@ -20,8 +20,6 @@ export interface SpecCallOrigin {
 }
 
 export type SpecCall = {
-    id: string
-    nonce: string
     name: string
     origin: SpecCallOrigin
     inputs: StringKeyMap
