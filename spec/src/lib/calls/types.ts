@@ -17,7 +17,7 @@ export interface SpecCallOrigin {
     transactionHash: TransactionHash
     contractAddress: Address
     contractName: string
-    signature?: string
+    signature: string
 }
 
 export type SpecCall = {
