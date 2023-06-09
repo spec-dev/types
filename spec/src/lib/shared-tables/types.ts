@@ -1,5 +1,3 @@
-export * from './ethereum/types'
-
 export enum ChainSchema {
     Ethereum = 'ethereum',
     Goerli = 'goerli',

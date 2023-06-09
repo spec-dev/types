@@ -14,8 +14,11 @@ export interface SpecEventOrigin {
     blockNumber: BlockNumber
     blockHash: BlockHash
     blockTimestamp: Timestamp
-    transactionHash?: TransactionHash
     contractAddress?: Address
+    transactionHash?: TransactionHash
+    transactionIndex?: number
+    logIndex?: number
+    signature?: string
 }
 
 export type TypedSpecEvent<T> = {
