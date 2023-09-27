@@ -6,6 +6,7 @@ import {
     TransactionHash,
     Address,
     ChainId,
+    Transaction,
 } from '../types'
 
 export interface SpecEventOrigin {
@@ -17,6 +18,7 @@ export interface SpecEventOrigin {
     contractAddress?: Address
     transactionHash?: TransactionHash
     transactionIndex?: number
+    transaction: Transaction
     logIndex?: number
     signature?: string
 }

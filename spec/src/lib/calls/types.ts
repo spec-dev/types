@@ -6,6 +6,7 @@ import {
     TransactionHash,
     Address,
     ChainId,
+    Transaction,
 } from '../types'
 
 export interface SpecCallOrigin {
@@ -15,6 +16,7 @@ export interface SpecCallOrigin {
     blockHash: BlockHash
     blockTimestamp: Timestamp
     transactionHash: TransactionHash
+    transaction: Transaction
     contractAddress: Address
     contractName: string
     signature: string

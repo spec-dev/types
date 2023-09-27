@@ -11,6 +11,8 @@ export function schemaForChainId(chainId: ChainId): ChainSchema | null {
             return ChainSchema.Polygon
         case ChainId.Mumbai:
             return ChainSchema.Mumbai
+        case ChainId.Base:
+            return ChainSchema.Base
         default:
             return null
     }
@@ -26,6 +28,8 @@ export function namespaceForChainId(chainId: ChainId): ChainNamespace | null {
             return ChainNamespace.Polygon
         case ChainId.Mumbai:
             return ChainNamespace.Mumbai
+        case ChainId.Base:
+            return ChainNamespace.Base
         default:
             return null
     }

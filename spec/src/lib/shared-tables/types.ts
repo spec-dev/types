@@ -3,6 +3,7 @@ export enum ChainSchema {
     Goerli = 'goerli',
     Polygon = 'polygon',
     Mumbai = 'mumbai',
+    Base = 'base',
 }
 
 export enum ChainNamespace {
@@ -10,4 +11,5 @@ export enum ChainNamespace {
     Goerli = 'goerli',
     Polygon = 'polygon',
     Mumbai = 'mumbai',
+    Base = 'base',
 }
