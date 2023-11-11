@@ -4,6 +4,11 @@ export enum ChainSchema {
     Polygon = 'polygon',
     Mumbai = 'mumbai',
     Base = 'base',
+    Optimism = 'optimism',
+    Arbitrum = 'arbitrum',
+    PGN = 'pgn',
+    Celo = 'celo',
+    Linea = 'linea',
 }
 
 export enum ChainNamespace {
@@ -12,4 +17,9 @@ export enum ChainNamespace {
     Polygon = 'polygon',
     Mumbai = 'mumbai',
     Base = 'base',
+    Optimism = 'optimism',
+    Arbitrum = 'arbitrum',
+    PGN = 'pgn',
+    Celo = 'celo',
+    Linea = 'linea',
 }

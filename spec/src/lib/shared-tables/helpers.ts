@@ -13,6 +13,16 @@ export function schemaForChainId(chainId: ChainId): ChainSchema | null {
             return ChainSchema.Mumbai
         case ChainId.Base:
             return ChainSchema.Base
+        case ChainId.Optimism:
+            return ChainSchema.Optimism
+        case ChainId.Arbitrum:
+            return ChainSchema.Arbitrum
+        case ChainId.PGN:
+            return ChainSchema.PGN
+        case ChainId.Celo:
+            return ChainSchema.Celo
+        case ChainId.Linea:
+            return ChainSchema.Linea
         default:
             return null
     }
@@ -30,6 +40,16 @@ export function namespaceForChainId(chainId: ChainId): ChainNamespace | null {
             return ChainNamespace.Mumbai
         case ChainId.Base:
             return ChainNamespace.Base
+        case ChainId.Optimism:
+            return ChainNamespace.Optimism
+        case ChainId.Arbitrum:
+            return ChainNamespace.Arbitrum
+        case ChainId.PGN:
+            return ChainNamespace.PGN
+        case ChainId.Celo:
+            return ChainNamespace.Celo
+        case ChainId.Linea:
+            return ChainNamespace.Linea
         default:
             return null
     }

@@ -20,6 +20,11 @@ export enum ChainId {
     Polygon = '137',
     Mumbai = '80001',
     Base = '8453',
+    Optimism = '10',
+    Arbitrum = '42161',
+    PGN = '424',
+    Celo = '42220',
+    Linea = '59144',
 }
 
 export enum TransactionStatus {
@@ -161,4 +166,7 @@ export interface Transaction {
 
     // Timestamp of when this transaction's block was collated.
     blockTimestamp: Timestamp
+
+    // The blockchain id.
+    chainId: ChainId
 }
