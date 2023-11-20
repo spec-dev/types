@@ -23,6 +23,8 @@ export function schemaForChainId(chainId: ChainId): ChainSchema | null {
             return ChainSchema.Celo
         case ChainId.Linea:
             return ChainSchema.Linea
+        case ChainId.Sepolia:
+            return ChainSchema.Sepolia
         default:
             return null
     }
@@ -50,6 +52,8 @@ export function namespaceForChainId(chainId: ChainId): ChainNamespace | null {
             return ChainNamespace.Celo
         case ChainId.Linea:
             return ChainNamespace.Linea
+        case ChainId.Sepolia:
+            return ChainNamespace.Sepolia
         default:
             return null
     }

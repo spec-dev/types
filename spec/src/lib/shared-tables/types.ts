@@ -9,6 +9,7 @@ export enum ChainSchema {
     PGN = 'pgn',
     Celo = 'celo',
     Linea = 'linea',
+    Sepolia = 'sepolia',
 }
 
 export enum ChainNamespace {
@@ -22,4 +23,5 @@ export enum ChainNamespace {
     PGN = 'pgn',
     Celo = 'celo',
     Linea = 'linea',
+    Sepolia = 'sepolia',
 }
