@@ -17,6 +17,8 @@ export function schemaForChainId(chainId: ChainId): ChainSchema | null {
             return ChainSchema.Optimism
         case ChainId.Arbitrum:
             return ChainSchema.Arbitrum
+        case ChainId.ArbitrumSepolia:
+            return ChainSchema.ArbitrumSepolia
         case ChainId.PGN:
             return ChainSchema.PGN
         case ChainId.Celo:
@@ -46,6 +48,8 @@ export function namespaceForChainId(chainId: ChainId): ChainNamespace | null {
             return ChainNamespace.Optimism
         case ChainId.Arbitrum:
             return ChainNamespace.Arbitrum
+        case ChainId.ArbitrumSepolia:
+            return ChainNamespace.ArbitrumSepolia
         case ChainId.PGN:
             return ChainNamespace.PGN
         case ChainId.Celo:
